@@ -1,0 +1,22 @@
+<h1>All Shops</h1>
+
+<a href="/shop/new">
+    <button>
+        Create
+    </button>
+</a>
+
+{{#each allShops}}
+
+<a class="shop-item" href="/shop/{{_id}}">
+    <h5>{{name}}</h5>
+    <h6>{{numberOfEmployees}}</h6>
+
+    {{#if currentlyOpen}}
+    <h6>Open</h6>
+    {{else}}
+    <h6>Closed</h6>
+    {{/if}}
+</a>
+
+{{/each}}

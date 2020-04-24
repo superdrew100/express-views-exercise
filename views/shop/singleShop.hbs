@@ -1,0 +1,19 @@
+<h1>Name {{singleShop.name}}</h1>
+
+<a href="/shop/{{singleShop._id}}/edit">
+    <button>Edit</button>
+</a>
+
+<h3>Currently Open</h3>
+{{#if singleShop.currentOpen}}
+<span>Open</span>
+{{else}}
+<span>Closed</span>
+{{/if}}
+
+<h3>Number of Employees</h3>
+<span>{{singleShop.numberOfEmployees}}</span>
+
+<form action="/shop/{{singleShop._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Shop">
+</form>

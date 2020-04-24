@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(175, 175, 175);
+}
+
+.header {
+    font-size: 32px;
+    color: #212121;
+    text-decoration: underline;;
+}
