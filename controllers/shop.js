@@ -31,6 +31,10 @@ shopRouter.get('/:id/edit', (req, res) => {
         })
 })
 
+shopRouter.get('/delete', (req, res)=> {
+    res.render('shop/deleteShop')
+})
+
 shopRouter.get('/:id', (req, res) => {
 
     ShopModel.getShop(req.params.id)
